@@ -11,4 +11,9 @@ public class SausageRoll extends Roll {
     public void prepare() {
 
     }
+
+    @Override
+    public double cost() {
+        return 0;
+    }
 }

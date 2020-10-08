@@ -9,6 +9,11 @@ public class EggRoll extends Roll {
 
     }
 
+    @Override
+    public double cost() {
+        return 0;
+    }
+
     public EggRoll() {
 
     }

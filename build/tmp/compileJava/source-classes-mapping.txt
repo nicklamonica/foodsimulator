@@ -4,8 +4,12 @@ store/RollStore.java
  store.RollStore
 customer/CasualCustomer.java
  customer.CasualCustomer
+roll/decorations/Toppings.java
+ roll.decorations.Toppings
 roll/types/SausageRoll.java
  roll.types.SausageRoll
+roll/decorations/Sauces.java
+ roll.decorations.Sauces
 roll/RollFactory.java
  roll.RollFactory
 roll/Roll.java
@@ -16,6 +20,8 @@ Main.java
  Main
 customer/CateringCustomer.java
  customer.CateringCustomer
+roll/RollDecorator.java
+ roll.RollDecorator
 roll/types/JellyRoll.java
  roll.types.JellyRoll
 customer/Customer.java
@@ -24,3 +30,5 @@ customer/BusinessCustomer.java
  customer.BusinessCustomer
 roll/types/PastryRoll.java
  roll.types.PastryRoll
+roll/decorations/Fillings.java
+ roll.decorations.Fillings

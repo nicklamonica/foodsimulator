@@ -13,4 +13,9 @@ public class JellyRoll extends Roll {
 
     }
 
+    @Override
+    public double cost() {
+        return 0;
+    }
+
 }
