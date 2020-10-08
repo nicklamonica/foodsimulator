@@ -1,6 +1,6 @@
 package roll;
 
-public interface Roll {
+public abstract class Roll {
 
-    void prepare();
+    public abstract void prepare();
 }

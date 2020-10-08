@@ -2,9 +2,8 @@ package roll.types;
 
 import roll.Roll;
 
-public class SausageRoll implements Roll {
+public class SausageRoll extends Roll {
 
-    @Override
     public void prepare() {
 
     }
