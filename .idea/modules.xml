@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/foodsimulator.iml" filepath="$PROJECT_DIR$/foodsimulator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ooad.foodsim.iml" filepath="$PROJECT_DIR$/.idea/modules/ooad.foodsim.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ooad.foodsim.main.iml" filepath="$PROJECT_DIR$/.idea/modules/ooad.foodsim.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ooad.foodsim.main~1.iml" filepath="$PROJECT_DIR$/.idea/modules/ooad.foodsim.main~1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ooad.foodsim.test.iml" filepath="$PROJECT_DIR$/.idea/modules/ooad.foodsim.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/ooad.foodsim.test~1.iml" filepath="$PROJECT_DIR$/.idea/modules/ooad.foodsim.test~1.iml" />
     </modules>
   </component>
 </project>
