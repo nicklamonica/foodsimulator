@@ -1,6 +1,6 @@
 package roll;
 
-import roll.types.SpringRoll;
+import roll.types.*;
 
 public class RollFactory {
 
