@@ -4,6 +4,10 @@ import roll.Roll;
 
 public class SausageRoll extends Roll {
 
+    public  SausageRoll() {
+
+    }
+
     public void prepare() {
 
     }

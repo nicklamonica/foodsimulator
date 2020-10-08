@@ -27,5 +27,4 @@ public class RollFactory {
         }
         return roll;
     }
-
 }

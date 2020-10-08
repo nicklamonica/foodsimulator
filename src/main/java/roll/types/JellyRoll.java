@@ -4,8 +4,13 @@ import roll.Roll;
 
 public class JellyRoll extends Roll {
 
+    public JellyRoll() {
+
+    }
+
     @Override
     public void prepare() {
 
     }
+
 }
