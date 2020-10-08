@@ -1,4 +1,6 @@
 package roll;
 
-public class Roll {
+public interface Roll {
+
+    void prepare();
 }
