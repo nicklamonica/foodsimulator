@@ -8,4 +8,8 @@ public class EggRoll extends Roll {
     public void prepare() {
 
     }
+
+    public EggRoll() {
+
+    }
 }
