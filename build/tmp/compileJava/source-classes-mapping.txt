@@ -26,6 +26,7 @@ roll/types/JellyRoll.java
  roll.types.JellyRoll
 customer/Customer.java
  customer.Customer
+ customer.Customer$1
 customer/BusinessCustomer.java
  customer.BusinessCustomer
 roll/types/PastryRoll.java
