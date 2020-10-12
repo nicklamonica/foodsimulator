@@ -1,10 +1,10 @@
-package roll.types;
+package main.java.roll.types;
 
-import roll.Roll;
+import main.java.roll.*;
 
 public class SpringRoll extends Roll  {
     public SpringRoll() {
-
+        description = "Spring Roll";
     }
 
     @Override

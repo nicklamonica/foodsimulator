@@ -1,11 +1,11 @@
-package customer;
+package main.java.customer;
 
 import store.RollStore;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 
-public class BusinessCustomer extends Customer {
+public class BusinessCustomer extends customer.Customer {
     public BusinessCustomer(RollStore rollStore) {
         super(rollStore);
     }

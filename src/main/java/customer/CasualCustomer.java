@@ -1,10 +1,10 @@
-package customer;
+package main.java.customer;
 
 import store.RollStore;
 
 import java.util.HashMap;
 
-public class CasualCustomer extends Customer {
+public class CasualCustomer extends customer.Customer {
 
     public CasualCustomer(RollStore rollStore) {
         super(rollStore);

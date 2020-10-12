@@ -1,5 +1,5 @@
-package roll.decorations;
-import roll.*;
+package main.java.roll.decorations;
+import main.java.roll.*;
 
 public class Fillings extends RollDecorator {
     Roll roll;
@@ -10,6 +10,10 @@ public class Fillings extends RollDecorator {
 
     public void prepare() {
 
+    }
+
+    public String getDescription() {
+        return roll.getDescription() + ", Filling";
     }
 
     public double cost() {

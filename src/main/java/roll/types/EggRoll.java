@@ -1,6 +1,6 @@
-package roll.types;
+package main.java.roll.types;
 
-import roll.Roll;
+import main.java.roll.*;
 
 public class EggRoll extends Roll {
 
@@ -15,6 +15,6 @@ public class EggRoll extends Roll {
     }
 
     public EggRoll() {
-
+        description = "Egg Roll";
     }
 }
