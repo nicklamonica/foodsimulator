@@ -9,7 +9,7 @@ import java.util.HashMap;
 public class CustomerTest extends TestCase {
     RollStore rollStore;
     public CustomerTest() {
-        this.rollStore = new RollStore(new RollFactory());
+        this.rollStore = new RollStore();
     }
 
     public void testCasualCustomer() {
