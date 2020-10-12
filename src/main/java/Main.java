@@ -1,19 +1,25 @@
-import customer.BusinessCustomer;
-import customer.CasualCustomer;
-import customer.CateringCustomer;
-import customer.Customer;
-import roll.RollFactory;
+
+import customer.*;
 import store.RollStore;
 
 public class Main {
 
     public static void main(String[] args) {
-        RollStore rollStore = new RollStore(new RollFactory());
+        // init roll store
+        RollStore rollStore = new RollStore();
+
+
+
+        // TODO create a random amount of customers for each day
         new CasualCustomer(rollStore);
         new CasualCustomer(rollStore);
         new CasualCustomer(rollStore);
         new CateringCustomer(rollStore);
         new BusinessCustomer(rollStore);
-        rollStore.openForADay(1);
+
+        // run for 30 days,
+        for (int day = 1; day <= 30; day++) {
+          rollStore.openForADay(day);
+        }
     }
 }
