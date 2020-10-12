@@ -1,11 +1,11 @@
-package roll.types;
+package main.java.roll.types;
 
-import roll.Roll;
+import main.java.roll.*;
 
 public class JellyRoll extends Roll {
 
     public JellyRoll() {
-
+        description = "Jelly Roll";
     }
 
     @Override

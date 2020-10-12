@@ -1,10 +1,10 @@
-package roll.types;
+package main.java.roll.types;
 
-import roll.Roll;
+import main.java.roll.*;
 
 public class PastryRoll extends Roll {
     public PastryRoll() {
-
+        description = "Pastry Roll";
     }
 
     @Override
