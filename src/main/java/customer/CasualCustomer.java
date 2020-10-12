@@ -1,8 +1,14 @@
 package customer;
 
+import store.RollStore;
+
 import java.util.HashMap;
 
 public class CasualCustomer extends Customer {
+
+    public CasualCustomer(RollStore rollStore) {
+        super(rollStore);
+    }
 
     // buys 1 to 3 rolls
     public HashMap<String, Integer> makeRollOrder() {

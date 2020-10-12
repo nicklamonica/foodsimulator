@@ -1,12 +1,19 @@
 import junit.framework.*;
 
 import customer.*;
+import roll.RollFactory;
+import store.RollStore;
 
 import java.util.HashMap;
 
 public class CustomerTest extends TestCase {
+    RollStore rollStore;
+    public CustomerTest() {
+        this.rollStore = new RollStore(new RollFactory());
+    }
+
     public void testCasualCustomer() {
-        Customer customer = new CasualCustomer();
+        Customer customer = new CasualCustomer(rollStore);
         HashMap<String, Integer> order = customer.makeRollOrder();
         // make sure one roll type has been order
         assertEquals(1, order.size());
@@ -18,7 +25,7 @@ public class CustomerTest extends TestCase {
     }
 
     public void testCateringCustomer() {
-        Customer customer = new CateringCustomer();
+        Customer customer = new CateringCustomer(rollStore);
         HashMap<String, Integer> order = customer.makeRollOrder();
         // make sure one roll type has been order
         assertEquals(3, order.size());
@@ -29,7 +36,7 @@ public class CustomerTest extends TestCase {
     }
 
     public void testBusinessCustomer() {
-        Customer customer = new BusinessCustomer();
+        Customer customer = new BusinessCustomer(rollStore);
         HashMap<String, Integer> order = customer.makeRollOrder();
         // make sure 5 roll types have been ordered
         assertEquals(5, order.size());

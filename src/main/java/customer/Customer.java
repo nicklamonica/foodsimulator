@@ -1,9 +1,15 @@
 package customer;
 
+import store.RollStore;
+
 import java.util.*;
 
-public abstract class Customer {
+public abstract class Customer implements StoreObserver {
     protected Random rand = new Random();
+
+    public Customer(RollStore rollStore) {
+        rollStore.addObserver(this);
+    }
 
     // gets a random roll types
     protected ArrayList<String> getRandomRollTypes(int numberOfTypes) {
@@ -24,6 +30,4 @@ public abstract class Customer {
         }
         return typesToReturn;
     }
-
-    public abstract HashMap<String, Integer> makeRollOrder();
 }
