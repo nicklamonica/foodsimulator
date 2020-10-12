@@ -1,10 +1,10 @@
-package customer;
+package main.java.customer;
 
 import store.RollStore;
 
 import java.util.*;
 
-public abstract class Customer implements StoreObserver {
+public abstract class Customer implements customer.StoreObserver {
     protected Random rand = new Random();
 
     public Customer(RollStore rollStore) {

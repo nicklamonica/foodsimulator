@@ -4,7 +4,7 @@ import store.RollStore;
 
 import java.util.HashMap;
 
-public class CasualCustomer extends customer.Customer {
+public class CasualCustomer extends Customer {
 
     public CasualCustomer(RollStore rollStore) {
         super(rollStore);
