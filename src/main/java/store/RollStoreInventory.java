@@ -37,7 +37,7 @@ public class RollStoreInventory {
         }
     }
 
-    public void getInventory() {
+    public void printInventory() {
         StringBuilder out = new StringBuilder();
         out.append("Inventory Data:\n");
         for (String roll: this.inventory.keySet()){

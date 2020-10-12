@@ -22,21 +22,23 @@ roll/types/JellyRoll.java
  roll.types.JellyRoll
 roll/RollDecorator.java
  roll.RollDecorator
-store/StoreObservable.java
- store.StoreObservable
+store/RollStoreInventory.java
+ store.RollStoreInventory
 store/RollStore.java
  store.RollStore
  store.RollStore$1
-store/RollStoreInventory.java
- store.RollStoreInventory
 customer/CasualCustomer.java
  customer.CasualCustomer
 Main.java
  Main
+customer/CustomerFactory.java
+ customer.CustomerFactory
 customer/CateringCustomer.java
  customer.CateringCustomer
 customer/Customer.java
  customer.Customer
  customer.Customer$1
+store/StoreObservable.java
+ store.StoreObservable
 customer/BusinessCustomer.java
  customer.BusinessCustomer

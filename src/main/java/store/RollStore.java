@@ -8,10 +8,11 @@ import java.util.HashMap;
 
 
 public class RollStore implements StoreObservable {
-    ArrayList<StoreObserver> customers;
+    public ArrayList<StoreObserver> customers;
     RollStoreInventory rollStoreInventory;
     HashMap<String, Integer> numSold;
     private double totalSales = 0.0;
+    private int numNotFilled = 0;
 
     public RollStore(){
         this.customers = new ArrayList<>();
@@ -24,6 +25,7 @@ public class RollStore implements StoreObservable {
         this.numSold = new HashMap<String, Integer>(){{
             put("egg", 0); put("jelly", 0); put("pastry", 0); put("sausage", 0); put("spring", 0);
         }};
+        this.numNotFilled = 0;
 
         // check and restock empty roll inventory
         this.rollStoreInventory.restockInventory();
@@ -32,25 +34,23 @@ public class RollStore implements StoreObservable {
         this.notifyObservers();
 
         // print everything at the end of the day
-        this.rollStoreInventory.getInventory();
-        this.getSalesData();
-
-        // TODO get rid of the observers of the store at the end of the day
-//        for (StoreObserver customer: customers) {
-//            this.removeObserver(customer);
-//        }
+        this.rollStoreInventory.printInventory();
+        this.printSalesData();
+        // remove all customers for that day
+        this.removeObservers();
         System.out.printf("==== End Of Day %d ====\n", day);
     }
 
     /********* Getters and setters ***********/
-    public void getSalesData(){
+    public void printSalesData(){
 
         StringBuilder out = new StringBuilder();
         out.append("Sales Data:\n");
         for (String roll: this.numSold.keySet()){
             out.append("Number of ").append(roll).append(" rolls sold: ").append(this.numSold.get(roll)).append("\n");
         }
-        out.append("Total Sales = ").append(totalSales);
+        out.append("Total Sales = ").append(totalSales).append("\n");
+        out.append("Number of orders not filled = ").append(this.numNotFilled);
         System.out.println(out);
     }
 
@@ -59,6 +59,7 @@ public class RollStore implements StoreObservable {
     /********** functions for making orders ***********/
     private void fillOrder(HashMap<String, Integer> order) {
         if (order == null) {
+            this.numNotFilled += 1;
             return;
         }
         // take the order from inventory
@@ -91,8 +92,8 @@ public class RollStore implements StoreObservable {
     }
 
     // remove customers
-    public void removeObserver(StoreObserver customer) {
-        this.customers.remove(customer);
+    public void removeObservers() {
+        this.customers.removeAll(this.customers);
     }
 
     // tell observers store is open, get orders.
@@ -100,13 +101,11 @@ public class RollStore implements StoreObservable {
         for (StoreObserver customer: this.customers) {
             HashMap<String, Integer> order =  customer.makeRollOrder();
             if (!this.validateOrder(order)) {
-                // TODO: create another store observer function that handles an invalidated order
+                System.out.println("Order: " + order + " could not be filled!");
+                // TODO: create another store observer function that handles sending a valid order
                 order = null;
             }
             this.fillOrder(order);
         }
     }
-
-    // ???
-    public void setChanged() { }
 }
