@@ -26,6 +26,7 @@ store/StoreObservable.java
  store.StoreObservable
 store/RollStore.java
  store.RollStore
+ store.RollStore$1
 customer/CasualCustomer.java
  customer.CasualCustomer
 Main.java

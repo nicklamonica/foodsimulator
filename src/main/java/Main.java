@@ -9,12 +9,11 @@ public class Main {
 
     public static void main(String[] args) {
         RollStore rollStore = new RollStore(new RollFactory());
-        Customer customer1 = new CasualCustomer(rollStore);
-        Customer customer2 = new CasualCustomer(rollStore);
-        Customer customer3 = new CasualCustomer(rollStore);
-        Customer customer4 = new CateringCustomer(rollStore);
-        Customer customer5 = new BusinessCustomer(rollStore);
-        rollStore.notifyObservers();
-        rollStore.getInventory();
+        new CasualCustomer(rollStore);
+        new CasualCustomer(rollStore);
+        new CasualCustomer(rollStore);
+        new CateringCustomer(rollStore);
+        new BusinessCustomer(rollStore);
+        rollStore.openForADay(1);
     }
 }
