@@ -1,6 +1,6 @@
-package main.java.roll.types;
+package roll.types;
 
-import main.java.roll.*;
+import roll.*;
 
 public class EggRoll extends Roll {
 

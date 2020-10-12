@@ -1,4 +1,4 @@
-package main.java.roll;
+package roll;
 
 public abstract class Roll {
     public String description = "";

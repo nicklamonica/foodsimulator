@@ -1,5 +1,5 @@
-package main.java.roll.decorations;
-import main.java.roll.*;
+package roll.decorations;
+import roll.*;
 
 public class Fillings extends RollDecorator {
     Roll roll;

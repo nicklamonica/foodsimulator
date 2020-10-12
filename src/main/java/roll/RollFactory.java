@@ -1,6 +1,6 @@
-package main.java.roll;
+package roll;
 
-import main.java.roll.types.*;
+import roll.types.*;
 
 public class RollFactory {
 

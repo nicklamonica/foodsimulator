@@ -1,4 +1,4 @@
-package main.java.customer;
+package customer;
 
 import store.RollStore;
 
