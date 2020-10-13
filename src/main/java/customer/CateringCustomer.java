@@ -37,11 +37,18 @@ public class CateringCustomer extends Customer {
             }
         }
 
-        // fill to 15
+        // try to fill to 15
         for (String roll: rollCount.keySet()) {
+            if (total == 15) {
+                break;
+            }
+            int numToGet = Math.min(15 - total, rollCount.get(roll));
 
+            if (rollCount.get(roll) >= numToGet) {
+                newOrder.put(roll, numToGet);
+            }
+            total += numToGet;
         }
-
         return newOrder;
     }
 }

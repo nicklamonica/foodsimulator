@@ -105,6 +105,9 @@ public class RollStore implements StoreObservable {
                 // tell customer to modify order
                 HashMap<String, Integer> rollCount =  this.rollStoreInventory.getRollCount();
                 order =  customer.makeModifiedRollOrder(rollCount, order);
+                if (order != null) {
+                    System.out.println("New Order: " + order + " is filled");
+                }
             }
             this.fillOrder(order);
         }

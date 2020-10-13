@@ -1,12 +1,11 @@
 roll/types/SpringRoll.java
  roll.types.SpringRoll
-store/RollStore.java
- store.RollStore
- store.RollStore$1
+roll/decorations/Fillings.java
+ roll.decorations.Fillings
 store/RollStoreInventory.java
  store.RollStoreInventory
-customer/CasualCustomer.java
- customer.CasualCustomer
+customer/StoreObserver.java
+ customer.StoreObserver
 store/StoreObservable.java
  store.StoreObservable
 roll/decorations/Toppings.java
@@ -21,24 +20,25 @@ roll/Roll.java
  roll.Roll
 roll/types/EggRoll.java
  roll.types.EggRoll
-Main.java
- Main
-customer/CustomerFactory.java
- customer.CustomerFactory
-customer/CateringCustomer.java
- customer.CateringCustomer
+roll/types/PastryRoll.java
+ roll.types.PastryRoll
 roll/RollDecorator.java
  roll.RollDecorator
 roll/types/JellyRoll.java
  roll.types.JellyRoll
+store/RollStore.java
+ store.RollStore
+ store.RollStore$1
+customer/CasualCustomer.java
+ customer.CasualCustomer
+Main.java
+ Main
+customer/BusinessCustomer.java
+ customer.BusinessCustomer
 customer/Customer.java
  customer.Customer
  customer.Customer$1
-customer/BusinessCustomer.java
- customer.BusinessCustomer
-roll/types/PastryRoll.java
- roll.types.PastryRoll
-customer/StoreObserver.java
- customer.StoreObserver
-roll/decorations/Fillings.java
- roll.decorations.Fillings
+customer/CustomerFactory.java
+ customer.CustomerFactory
+customer/CateringCustomer.java
+ customer.CateringCustomer
