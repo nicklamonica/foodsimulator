@@ -20,6 +20,10 @@ public class BusinessCustomer extends Customer {
             order.put(roll, 2);
         }
         return order;
-
     }
+    // business customer does not make a modified order if his original order could not be filled
+    public HashMap<String, Integer> makeModifiedRollOrder(HashMap<String, Integer> rollCount, HashMap<String, Integer> originalOrder) {
+        return null;
+    }
+
 }

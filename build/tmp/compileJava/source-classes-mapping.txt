@@ -3,8 +3,13 @@ roll/types/SpringRoll.java
 store/RollStore.java
  store.RollStore
  store.RollStore$1
+<<<<<<< HEAD
 roll/types/PastryRoll.java
  roll.types.PastryRoll
+=======
+store/RollStoreInventory.java
+ store.RollStoreInventory
+>>>>>>> 038cbe8e06c3020b555163a6b74f1ca9ff4fffc8
 customer/CasualCustomer.java
  customer.CasualCustomer
 store/StoreObservable.java
@@ -13,10 +18,17 @@ customer/BusinessCustomer.java
  customer.BusinessCustomer
 roll/types/SausageRoll.java
  roll.types.SausageRoll
+<<<<<<< HEAD
 store/RollStoreInventory.java
  store.RollStoreInventory
 customer/StoreObserver.java
  customer.StoreObserver
+=======
+roll/decorations/Sauces.java
+ roll.decorations.Sauces
+roll/RollFactory.java
+ roll.RollFactory
+>>>>>>> 038cbe8e06c3020b555163a6b74f1ca9ff4fffc8
 roll/Roll.java
  roll.Roll
 roll/types/EggRoll.java
@@ -27,13 +39,14 @@ customer/CustomerFactory.java
  customer.CustomerFactory
 customer/CateringCustomer.java
  customer.CateringCustomer
-roll/types/JellyRoll.java
- roll.types.JellyRoll
 roll/RollDecorator.java
  roll.RollDecorator
+roll/types/JellyRoll.java
+ roll.types.JellyRoll
 customer/Customer.java
  customer.Customer
  customer.Customer$1
+<<<<<<< HEAD
 roll/decorations/Toppings.java
  roll.decorations.Toppings
 roll/decorations/Sauces.java
@@ -42,3 +55,13 @@ roll/decorations/Fillings.java
  roll.decorations.Fillings
 roll/RollFactory.java
  roll.RollFactory
+=======
+customer/BusinessCustomer.java
+ customer.BusinessCustomer
+roll/types/PastryRoll.java
+ roll.types.PastryRoll
+customer/StoreObserver.java
+ customer.StoreObserver
+roll/decorations/Fillings.java
+ roll.decorations.Fillings
+>>>>>>> 038cbe8e06c3020b555163a6b74f1ca9ff4fffc8

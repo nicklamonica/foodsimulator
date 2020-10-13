@@ -40,10 +40,18 @@ public class RollStoreInventory {
     public void printInventory() {
         StringBuilder out = new StringBuilder();
         out.append("Inventory Data:\n");
-        for (String roll: this.inventory.keySet()){
+        for (String roll: this.inventory.keySet()) {
             out.append("Number of ").append(roll).append(" rolls left: ").append(this.inventory.get(roll).size()).append("\n");
         }
         System.out.println(out);
+    }
+
+    public HashMap<String, Integer> getRollCount() {
+        HashMap<String, Integer> count = new HashMap<>();
+        for (String roll: this.inventory.keySet()) {
+            count.put(roll, this.getNumberOfRolls(roll));
+        }
+        return count;
     }
 
     public int getNumberOfRolls(String roll) {
