@@ -27,10 +27,10 @@ customer/CustomerFactory.java
  customer.CustomerFactory
 customer/CateringCustomer.java
  customer.CateringCustomer
-roll/types/JellyRoll.java
- roll.types.JellyRoll
 roll/RollDecorator.java
  roll.RollDecorator
+roll/types/JellyRoll.java
+ roll.types.JellyRoll
 customer/Customer.java
  customer.Customer
  customer.Customer$1
