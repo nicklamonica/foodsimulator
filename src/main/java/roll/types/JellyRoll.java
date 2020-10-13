@@ -9,11 +9,6 @@ public class JellyRoll extends Roll {
     }
 
     @Override
-    public void prepare() {
-
-    }
-
-    @Override
     public double cost() {
         return 0;
     }
