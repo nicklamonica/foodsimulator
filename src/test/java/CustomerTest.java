@@ -79,27 +79,48 @@ public class CustomerTest extends TestCase {
         assertThat(r5, CoreMatchers.containsString("Pastry Roll"));
     }
 
-    public void testRollCosts() {
-        Roll roll = new SausageRoll();
+    public void testSausageRollCost() {
         RollFactory factory = new RollFactory();
+        Roll roll = factory.createRoll("sausage");
 
-        Roll roll1 = factory.createRoll("sausage");
-        Roll roll2 = factory.createRoll("jelly");
-        Roll roll3 = factory.createRoll("egg");
-        Roll roll4 = factory.createRoll("spring");
-        Roll roll5 = factory.createRoll("pastry");
+        Double rCost = roll.cost();
+        assertEquals(rCost > 0.0, true);
 
-        Double r1 = roll1.cost();
-        Double r2 = roll2.cost();
-        Double r3 = roll3.cost();
-        Double r4 = roll4.cost();
-        Double r5 = roll5.cost();
+    }
 
-        assertEquals(r1 > 0.0, true);
-        assertEquals(r2 > 0.0, true);
-        assertEquals(r3 > 0.0, true);
-        assertEquals(r4 > 0.0, true);
-        assertEquals(r5 > 0.0, true);
+    public void testJellyRollCost() {
+        RollFactory factory = new RollFactory();
+        Roll roll = factory.createRoll("jelly");
+
+        Double rCost = roll.cost();
+        assertEquals(rCost > 0.0, true);
+
+    }
+
+    public void testEggRollCost() {
+        RollFactory factory = new RollFactory();
+        Roll roll = factory.createRoll("egg");
+
+        Double rCost = roll.cost();
+        assertEquals(rCost > 0.0, true);
+
+    }
+
+    public void testSpringRollCost() {
+        RollFactory factory = new RollFactory();
+        Roll roll = factory.createRoll("spring");
+
+        Double rCost = roll.cost();
+        assertEquals(rCost > 0.0, true);
+
+    }
+
+    public void testPastryRollCost() {
+        RollFactory factory = new RollFactory();
+        Roll roll = factory.createRoll("pastry");
+
+        Double rCost = roll.cost();
+        assertEquals(rCost > 0.0, true);
 
     }
 
@@ -110,5 +131,5 @@ public class CustomerTest extends TestCase {
             assert(30 ==  hash.get(key));
         }
     }
-    
+
 }
