@@ -104,6 +104,11 @@ public class CustomerTest extends TestCase {
     }
 
     public void testRollAmounts() {
-        rollStore.rollStoreInventory.
+        HashMap<String, Integer> hash = rollStore.rollStoreInventory.getRollCount();
+
+        for (String key: hash.keySet()) {
+            assert(30 ==  hash.get(key));
+        }
     }
+    
 }
