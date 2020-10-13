@@ -1,7 +1,6 @@
 import junit.framework.*;
 
 import customer.*;
-import roll.RollFactory;
 import store.RollStore;
 
 import java.util.HashMap;
