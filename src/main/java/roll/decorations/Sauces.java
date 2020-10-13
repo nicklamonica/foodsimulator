@@ -9,7 +9,7 @@ public class Sauces extends RollDecorator {
     }
 
     public String getDescription() {
-        return roll.getDescription() + ", Sauces";
+        return roll.getDescription() + ", Extra Sauces";
     }
 
     public double cost() {

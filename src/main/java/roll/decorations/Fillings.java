@@ -9,7 +9,7 @@ public class Fillings extends RollDecorator {
     }
 
     public String getDescription() {
-        return roll.getDescription() + ", Filling";
+        return roll.getDescription() + ", Extra Filling";
     }
 
     public double cost() {

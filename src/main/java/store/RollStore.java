@@ -9,7 +9,7 @@ import java.util.HashMap;
 
 public class RollStore implements StoreObservable {
     public ArrayList<StoreObserver> customers;
-    RollStoreInventory rollStoreInventory;
+    public RollStoreInventory rollStoreInventory;
     HashMap<String, Integer> numSold;
     private double totalSales = 0.0;
     private int numNotFilled = 0;

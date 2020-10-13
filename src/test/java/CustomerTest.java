@@ -70,4 +70,32 @@ public class CustomerTest extends TestCase {
         assertEquals(r5.contains("Sauces") || r5.contains("Toppings") || r5.contains("Filling"), true);
 
     }
+
+    public void testRollCosts() {
+        Roll roll = new SausageRoll();
+        RollFactory factory = new RollFactory();
+
+        Roll roll1 = factory.createRoll("sausage");
+        Roll roll2 = factory.createRoll("jelly");
+        Roll roll3 = factory.createRoll("egg");
+        Roll roll4 = factory.createRoll("spring");
+        Roll roll5 = factory.createRoll("pastry");
+
+        Double r1 = roll1.cost();
+        Double r2 = roll2.cost();
+        Double r3 = roll3.cost();
+        Double r4 = roll4.cost();
+        Double r5 = roll5.cost();
+
+        assertEquals(r1 > 0.0, true);
+        assertEquals(r2 > 0.0, true);
+        assertEquals(r3 > 0.0, true);
+        assertEquals(r4 > 0.0, true);
+        assertEquals(r5 > 0.0, true);
+
+    }
+
+    public void testRollAmounts() {
+        rollStore.rollStoreInventory.
+    }
 }
