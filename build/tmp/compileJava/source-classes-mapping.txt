@@ -20,6 +20,7 @@ roll/Roll.java
  roll.Roll
 roll/types/EggRoll.java
  roll.types.EggRoll
+<<<<<<< HEAD
 roll/types/PastryRoll.java
  roll.types.PastryRoll
 roll/RollDecorator.java
@@ -35,6 +36,18 @@ Main.java
  Main
 customer/BusinessCustomer.java
  customer.BusinessCustomer
+=======
+Main.java
+ Main
+customer/CustomerFactory.java
+ customer.CustomerFactory
+customer/CateringCustomer.java
+ customer.CateringCustomer
+roll/types/JellyRoll.java
+ roll.types.JellyRoll
+roll/RollDecorator.java
+ roll.RollDecorator
+>>>>>>> 7c874881e15ed612705119874ffe2e710766ea0a
 customer/Customer.java
  customer.Customer
  customer.Customer$1

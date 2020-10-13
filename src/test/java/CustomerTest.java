@@ -78,4 +78,58 @@ public class CustomerTest extends TestCase {
         assertThat(r4, CoreMatchers.containsString("Spring Roll"));
         assertThat(r5, CoreMatchers.containsString("Pastry Roll"));
     }
+
+    public void testSausageRollCost() {
+        RollFactory factory = new RollFactory();
+        Roll roll = factory.createRoll("sausage");
+
+        Double rCost = roll.cost();
+        assertEquals(rCost > 0.0, true);
+
+    }
+
+    public void testJellyRollCost() {
+        RollFactory factory = new RollFactory();
+        Roll roll = factory.createRoll("jelly");
+
+        Double rCost = roll.cost();
+        assertEquals(rCost > 0.0, true);
+
+    }
+
+    public void testEggRollCost() {
+        RollFactory factory = new RollFactory();
+        Roll roll = factory.createRoll("egg");
+
+        Double rCost = roll.cost();
+        assertEquals(rCost > 0.0, true);
+
+    }
+
+    public void testSpringRollCost() {
+        RollFactory factory = new RollFactory();
+        Roll roll = factory.createRoll("spring");
+
+        Double rCost = roll.cost();
+        assertEquals(rCost > 0.0, true);
+
+    }
+
+    public void testPastryRollCost() {
+        RollFactory factory = new RollFactory();
+        Roll roll = factory.createRoll("pastry");
+
+        Double rCost = roll.cost();
+        assertEquals(rCost > 0.0, true);
+
+    }
+
+    public void testRollAmounts() {
+        HashMap<String, Integer> hash = rollStore.rollStoreInventory.getRollCount();
+
+        for (String key: hash.keySet()) {
+            assert(30 ==  hash.get(key));
+        }
+    }
+
 }
