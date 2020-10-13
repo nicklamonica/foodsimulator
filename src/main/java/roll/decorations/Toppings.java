@@ -8,9 +8,6 @@ public class Toppings extends RollDecorator {
         this.roll = roll;
     }
 
-    public void prepare() {
-
-    }
     public String getDescription() {
         return roll.getDescription() + ", Toppings";
     }
