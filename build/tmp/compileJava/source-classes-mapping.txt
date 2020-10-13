@@ -3,8 +3,8 @@ roll/types/SpringRoll.java
 store/RollStore.java
  store.RollStore
  store.RollStore$1
-roll/decorations/Fillings.java
- roll.decorations.Fillings
+store/RollStoreInventory.java
+ store.RollStoreInventory
 customer/CasualCustomer.java
  customer.CasualCustomer
 store/StoreObservable.java
@@ -15,8 +15,8 @@ roll/types/SausageRoll.java
  roll.types.SausageRoll
 roll/decorations/Sauces.java
  roll.decorations.Sauces
-customer/StoreObserver.java
- customer.StoreObserver
+roll/RollFactory.java
+ roll.RollFactory
 roll/Roll.java
  roll.Roll
 roll/types/EggRoll.java
@@ -38,7 +38,7 @@ customer/BusinessCustomer.java
  customer.BusinessCustomer
 roll/types/PastryRoll.java
  roll.types.PastryRoll
-store/RollStoreInventory.java
- store.RollStoreInventory
-roll/RollFactory.java
- roll.RollFactory
+customer/StoreObserver.java
+ customer.StoreObserver
+roll/decorations/Fillings.java
+ roll.decorations.Fillings
