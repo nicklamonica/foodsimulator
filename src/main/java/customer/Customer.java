@@ -4,7 +4,7 @@ import store.RollStore;
 
 import java.util.*;
 
-public abstract class Customer implements customer.StoreObserver {
+public abstract class Customer implements StoreObserver {
     protected Random rand = new Random();
 
     public Customer(RollStore rollStore) {
