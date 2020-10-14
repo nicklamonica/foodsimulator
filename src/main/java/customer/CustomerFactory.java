@@ -2,7 +2,6 @@ package customer;
 
 import store.RollStore;
 
-import java.util.ArrayList;
 import java.util.Random;
 
 public class CustomerFactory {

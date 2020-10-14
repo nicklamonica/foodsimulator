@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CustomerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2020-10-13T23:39:01" hostname="Bryces-MacBook-Pro.local" time="0.001">
+<testsuite name="CustomerTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2020-10-14T15:53:10" hostname="NICK" time="0.013">
   <properties/>
-  <testcase name="testRollAmounts" classname="CustomerTest" time="0.001"/>
+  <testcase name="testSausageRollCost" classname="CustomerTest" time="0.001"/>
+  <testcase name="testSpringRollCost" classname="CustomerTest" time="0.001"/>
+  <testcase name="testRollAmounts" classname="CustomerTest" time="0.0"/>
+  <testcase name="testPastryRollCost" classname="CustomerTest" time="0.0"/>
+  <testcase name="testCateringCustomer" classname="CustomerTest" time="0.002"/>
+  <testcase name="testRandomDecorations" classname="CustomerTest" time="0.008"/>
+  <testcase name="testBusinessCustomer" classname="CustomerTest" time="0.0"/>
+  <testcase name="testJellyRollCost" classname="CustomerTest" time="0.0"/>
+  <testcase name="testCasualCustomer" classname="CustomerTest" time="0.001"/>
+  <testcase name="testEggRollCost" classname="CustomerTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

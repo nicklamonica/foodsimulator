@@ -132,4 +132,16 @@ public class CustomerTest extends TestCase {
         }
     }
 
+    public void runsSimWithoutErrors() {
+        // init roll store and customer factory
+        try {
+            RollStore rollStore = new RollStore();
+            CustomerFactory customerFactory = new CustomerFactory();
+            customerFactory.createCustomers(rollStore);
+            rollStore.openForADay(1);
+        } catch (Exception e ) {
+            System.out.println(e.getMessage());
+            fail();
+        }
+    }
 }
